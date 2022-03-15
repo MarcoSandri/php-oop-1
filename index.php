@@ -33,7 +33,7 @@ class Movie {
         $this->genre = $genres;
     }
 
-    public function getMovie() {
+    public function printMovie() {
         echo '<h1>' . $this->title .' '. $this->vote .'</h1>';
         echo '<h3>' . $this->year . '</h3>';
 
@@ -57,7 +57,7 @@ $theGodfather->setReview('One of the best films of all time, an absolute masterp
 $theGodfather->setGenre('crime', 'mafia');
 
 
-$oldBoy->getMovie();
-$theGodfather->getMovie();
+$oldBoy->printMovie();
+$theGodfather->printMovie();
 
 ?>
