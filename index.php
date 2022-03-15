@@ -36,11 +36,13 @@ class Movie {
     public function getMovie() {
         echo '<h1>' . $this->title .' '. $this->vote .'</h1>';
         echo '<h3>' . $this->year . '</h3>';
+
         echo '<div>';
         foreach($this->genre as $genre){
             echo $genre . ' ';
         }
         echo '</div>';
+
         echo '<p>' . $this->review . '</p>';
     }
 
